@@ -1,0 +1,18 @@
+---
+title: "Cork oak modeling"
+author: "Joe DeCesaro"
+date: "8/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+
+source(here("src", "cork_oak_growth.R"))
+```
+
+```{r}
+height_t2(25, 4, 10)
+```
+

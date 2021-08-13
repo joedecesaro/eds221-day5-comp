@@ -7,6 +7,18 @@
 # t1: tree age at time 1, (years)
 # t2: tree age at time 2 (years)
 
+#' Estimate cork oak growth
+#' 
+#' Description: this is a function from this paper which calculates the tree height for cork oaks given some initial age and height
+#'
+#' @param height_t1 This is the tree height at the starting year
+#' @param t1 A number indicating the starting year
+#' @param t2 A number indicating the ending year
+#'
+#' @return
+#' @export
+#'
+#' @examples
 height_t2 <- function(height_t1, t1, t2) {
   20.7216 / (1 - (1 - 20.7216 / height_t1) * (t1 / t2) ^ 1.4486)
 }
